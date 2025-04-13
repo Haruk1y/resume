@@ -1,0 +1,40 @@
+{
+  "hash": "f7fd8650",
+  "configHash": "2bfaecbb",
+  "lockfileHash": "e17e1dc3",
+  "browserHash": "6f40e0b5",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "ccbf277b",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "ca8f8e4f",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../../node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "528c9cd8",
+      "needsInterop": false
+    },
+    "chart.js/auto": {
+      "src": "../../../../node_modules/chart.js/auto/auto.js",
+      "file": "chart__js_auto.js",
+      "fileHash": "d9536d27",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-LW4I4DCF": {
+      "file": "chunk-LW4I4DCF.js"
+    },
+    "chunk-V6TY7KAL": {
+      "file": "chunk-V6TY7KAL.js"
+    }
+  }
+}
