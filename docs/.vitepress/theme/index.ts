@@ -10,6 +10,7 @@ import GitHubStats from '../components/GithubStats.vue'
 import Testimonials from '../components/Testimonials.vue'
 import ContactForm from '../components/ContactForm.vue'
 import ClientOnly from '../components/ClientOnly.vue'
+import CustomFooter from '../components/CustomFooter.vue'
 import './index.css'
 
 export default {
@@ -26,5 +27,6 @@ export default {
     app.component('Testimonials', Testimonials)
     app.component('ContactForm', ContactForm)
     app.component('ClientOnly', ClientOnly)
+    app.component('CustomFooter', CustomFooter)
   }
 } satisfies Theme

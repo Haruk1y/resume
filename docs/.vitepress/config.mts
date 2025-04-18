@@ -43,12 +43,6 @@ export default defineConfig({
       { icon: 'linkedin', link: 'https://linkedin.com/in/haruki-yajima-37b4a0337' },
       { icon: 'twitter', link: 'https://twitter.com/Haruk1y_' },
     ],
-    
-    // Footer
-    footer: {
-      message: 'Built with VitePress and Vue.js',
-      copyright: `Copyright © ${new Date().getFullYear()} Haruki Yajima`
-    }
   },
   
   // For better SEO

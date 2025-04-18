@@ -1,82 +1,65 @@
 <template>
   <div class="cv-container">
     <AnimatedHeader 
-      name="Your Name" 
-      title="Frontend Developer & UX Designer" 
-      bio="Passionate about creating beautiful, intuitive interfaces and exceptional user experiences. I combine technical expertise with creative problem-solving to build innovative web applications."
+      name="矢島陽樹 / Haruki Yajima" 
+      title="ML engineer" 
+      bio="Undergraduate student in the Matsui Lab, Department of Information and Communication Engineering at the University of Tokyo🇯🇵"
       :social-links="[
-        { name: 'GitHub', url: 'https://github.com/yourusername', icon: 'fab fa-github' },
-        { name: 'LinkedIn', url: 'https://linkedin.com/in/yourusername', icon: 'fab fa-linkedin' },
-        { name: 'Twitter', url: 'https://twitter.com/yourusername', icon: 'fab fa-twitter' },
+        { name: 'GitHub', url: 'https://github.com/Haruk1y', icon: 'fab fa-github' },
+        { name: 'LinkedIn', url: 'https://linkedin.com/in/haruki-yajima-37b4a0337', icon: 'fab fa-linkedin' },
+        { name: 'Twitter', url: 'https://twitter.com/Haruk1y_', icon: 'fab fa-twitter' },
         { name: 'Portfolio', url: '#', icon: 'fas fa-globe' }
       ]"
       :stats="[
-        { value: '5+', label: 'Years Experience' },
-        { value: '30+', label: 'Projects Completed' },
+        { value: '2+', label: 'Years Experience' },
         { value: '15+', label: 'Technologies' },
-        { value: '5+', label: 'Happy Clients' }
+        { value: '3+', label: 'Projects Completed' },
+        { value: '0', label: 'papers published' }
       ]"
     />
-
-    <section class="section skills-section">
-      <div class="container">
-        <div class="section-title-container">
-          <h2 class="section-title">My Skills</h2>
-          <p class="section-subtitle">A combination of technical expertise and creative problem-solving</p>
-        </div>
-        
-        <div class="skills-visual">
-          <div class="skills-chart">
-            <ClientOnly>
-              <SkillsRadarChart :skills="[
-                { name: 'JavaScript', level: 90 },
-                { name: 'React', level: 85 },
-                { name: 'Vue.js', level: 80 },
-                { name: 'UI/UX Design', level: 75 },
-                { name: 'Node.js', level: 70 },
-                { name: 'TypeScript', level: 85 },
-                { name: 'CSS/SCSS', level: 90 }
-              ]" />
-            </ClientOnly>
-          </div>
-          
-          <div class="skills-bars">
-            <ClientOnly>
-              <SkillsBars />
-            </ClientOnly>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="section experience-section">
       <div class="container">
         <div class="section-title-container">
-          <h2 class="section-title">Work Experience</h2>
-          <p class="section-subtitle">My professional journey and career highlights</p>
+          <h2 class="section-title">Carrer</h2>
+          <p class="section-subtitle">My academic journey and career highlights</p>
         </div>
         
         <ExperienceTimeline :experiences="[
-          {
-            period: '2022 - Present',
-            company: 'Example Tech Co.',
-            role: 'Senior Frontend Developer',
-            description: 'Leading the frontend development team and implementing new features using React and TypeScript.',
-            skills: ['React', 'TypeScript', 'Redux', 'Styled Components']
+        {
+          period: '2024 Apr - Present',
+          company: '東京大学 / the University of Tokyo',
+          role: '工学部電子情報工学科 / Department of Information and Communication Engineering',
+          description: 'Studying the foundations of computer architecture and low-level systems to cutting-edge deep learning applications.',
+          skills: ['machine learning', 'ele', 'Literature']
+        },
+        {
+            period: '2024 Nov - Present',
+            company: 'Mind in a Device Co.',
+            role: 'ML engineer intern',
+            description: 'Mainly working as a machine learning engineer in projects related to 3D reconstruction.',
+            skills: ['python', 'Machine learning', 'Computer Vision', '3D reconstruction', 'AWS', 'docker']
           },
           {
-            period: '2019 - 2022',
-            company: 'Digital Solutions Inc.',
-            role: 'Full Stack Developer',
-            description: 'Developed and maintained web applications using Vue.js and Node.js.',
-            skills: ['Vue.js', 'Node.js', 'Express', 'MongoDB']
+            period: '2024 Sep - 2024 Sep',
+            company: 'freee Co.',
+            role: 'Web enginner intern',
+            description: 'As a member of the IAM team, worked around the authentication technology in the product.',
+            skills: ['ruby on Rails', 'React', 'Typescript', 'authentication']
           },
           {
-            period: '2017 - 2019',
-            company: 'Web Innovators',
-            role: 'Junior Web Developer',
-            description: 'Collaborated on various client projects, focusing on responsive design and frontend implementation.',
-            skills: ['JavaScript', 'CSS', 'HTML', 'jQuery']
+            period: '2024 Aug - 2024 Aug',
+            company: 'Rakuten Group, Inc.',
+            role: 'Web engineer intern',
+            description: 'Worked with other interns to develop a web app for disaster prevention. I was mainly in charge of backend processing using django.',
+            skills: ['javascript', 'python', 'django', 'System design']
+          },
+          {
+            period: '2022 Apr - 2024 Mar',
+            company: '東京大学 / the University of Tokyo',
+            role: '理科一類 / Natural Sciences I',
+            description: 'Studied a wide variety of subjects to gain a broad liberal arts background',
+            skills: ['Liberal Arts', 'Science', 'Literature']
           }
         ]" />
       </div>
@@ -91,8 +74,8 @@
         
         <ProjectShowcase :projects="[
           {
-            title: 'E-commerce Platform',
-            description: 'A fully functional e-commerce platform with product management, cart functionality, and payment integration.',
+            title: 'Historical Map',
+            description: 'TBA',
             technologies: ['React', 'Node.js', 'MongoDB', 'Stripe API'],
             demoLink: 'https://example.com/demo',
             codeLink: 'https://github.com/username/project',
@@ -101,8 +84,8 @@
             imageBgColor: '#e8f4fc'
           },
           {
-            title: 'Task Management App',
-            description: 'A collaborative task management application with real-time updates and team functionality.',
+            title: 'TBA',
+            description: 'TBA',
             technologies: ['Vue.js', 'Firebase', 'Vuex', 'SCSS'],
             demoLink: 'https://example.com/demo',
             codeLink: 'https://github.com/username/project',
@@ -110,16 +93,6 @@
             iconColor: '#2ecc71',
             imageBgColor: '#e6f9ee'
           },
-          {
-            title: 'Weather Dashboard',
-            description: 'An interactive weather dashboard that displays current and forecasted weather data for multiple locations.',
-            technologies: ['JavaScript', 'Weather API', 'Chart.js', 'CSS Grid'],
-            demoLink: 'https://example.com/demo',
-            codeLink: 'https://github.com/username/project',
-            icon: 'fas fa-cloud-sun',
-            iconColor: '#f39c12',
-            imageBgColor: '#fef5e7'
-          }
         ]" />
       </div>
     </section>
@@ -127,32 +100,26 @@
     <section class="section github-section">
       <div class="container">
         <ClientOnly>
-          <GitHubStats username="yourusername" />
+          <GitHubStats username="Haruk1y" />
         </ClientOnly>
-      </div>
-    </section>
-
-    <section class="section testimonials-section">
-      <div class="container">
-        <div class="section-title-container">
-          <h2 class="section-title">Testimonials</h2>
-          <p class="section-subtitle">What people say about working with me</p>
-        </div>
-        <Testimonials />
       </div>
     </section>
 
     <section class="section contact-section">
       <ContactForm 
-        email="your.email@example.com"
+        email="yajima.code@gmail.com"
         location="Tokyo, Japan"
-        availability="Available for freelance & full-time positions"
+        availability="Available for intern & freelance positions"
         :socialLinks="[
-          { name: 'GitHub', url: 'https://github.com/yourusername', icon: 'fab fa-github' },
-          { name: 'LinkedIn', url: 'https://linkedin.com/in/yourusername', icon: 'fab fa-linkedin' },
-          { name: 'Twitter', url: 'https://twitter.com/yourusername', icon: 'fab fa-twitter' }
+          { name: 'GitHub', url: 'https://github.com/Haruk1y', icon: 'fab fa-github' },
+          { name: 'LinkedIn', url: 'https://linkedin.com/in/haruki-yajima-37b4a0337', icon: 'fab fa-linkedin' },
+          { name: 'Twitter', url: 'https://twitter.com/Haruk1y_', icon: 'fab fa-twitter' }
         ]"
       />
+    </section>
+
+    <section class="custom-footer-section">
+        <CustomFooter />
     </section>
   </div>
 </template>
@@ -248,4 +215,5 @@ import GitHubStats from './GithubStats.vue'
 import Testimonials from './Testimonials.vue'
 import ContactForm from './ContactForm.vue'
 import ClientOnly from './ClientOnly.vue'
+import CustomFooter from './CustomFooter.vue'
 </script>

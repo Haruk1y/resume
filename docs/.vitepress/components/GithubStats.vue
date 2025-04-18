@@ -86,13 +86,12 @@ const props = defineProps({
     type: String,
     default: 'github-username'
   },
-  // In a real implementation, you would fetch this data from GitHub's API
   stats: {
     type: Object,
     default: () => ({
-      repositories: 24,
-      stars: 157,
-      contributions: 834,
+      repositories: 1,
+      stars: 1,
+      contributions: 1,
       languages: [
         { name: 'JavaScript', percentage: 45, color: '#f1e05a' },
         { name: 'TypeScript', percentage: 25, color: '#2b7489' },

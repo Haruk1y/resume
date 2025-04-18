@@ -13,7 +13,7 @@
     "resume",
     "portfolio"
   ],
-  "author": "Your Name",
+  "author": "Haruki Yajima",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.14",

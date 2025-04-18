@@ -126,6 +126,7 @@ defineProps({
 .timeline-company {
   font-weight: bold;
   font-size: 1.2rem;
+  color: #000000;
   margin-bottom: 0.25rem;
 }
 
